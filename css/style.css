@@ -399,3 +399,27 @@ footer {
     font-size: 17px;
   }
 }
+
+/* HOME HERO BUTTON GAP (MOBILE ONLY) */
+@media (max-width: 768px) {
+  .hero .btn,
+  .hero .btn-outline {
+    margin-bottom: 12px;
+  }
+
+  /* Remove extra gap after the last button */
+  .hero .btn-outline {
+    margin-bottom: 0;
+  }
+}
+/* SPACE BETWEEN HERO TITLE AND BUTTONS */
+.hero h1 {
+  margin-bottom: 32px;
+}
+
+/* Slightly tighter on mobile so it still looks balanced */
+@media (max-width: 768px) {
+  .hero h1 {
+    margin-bottom: 24px;
+  }
+}
