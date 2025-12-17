@@ -419,4 +419,13 @@ footer {
   box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }
 
+.resource-card,
+.company-card,
+.team-card,
+.event-card {
+  background: var(--card-bg);
+  border-radius: 14px;
+  padding: 20px;
+  border: 1
+
 
