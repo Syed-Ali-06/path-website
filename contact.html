@@ -1,105 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>P.A.T.H | Contact</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>P.A.T.H | Contact</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="assets/images/path-logo.png" alt="P.A.T.H Logo" />
-            <span>P.A.T.H</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="apprenticeships.html">Apprenticeships</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/images/path-logo.png" alt="P.A.T.H Logo" />
+      <span>P.A.T.H</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="apprenticeships.html">Apprenticeships</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 
-<main class="page">
-  <h1 class="animate">Contact Us</h1>
-  <p class="animate">
-    Email us at <strong>path.enquiries@gmail.com</strong> or send a message below.
-  </p>
-<div id="form-success" class="form-success">
-  ✅ Thank you! Your enquiry has been submitted successfully.
-</div>
+  <!-- MAIN -->
+  <main class="page">
+    <h1 class="animate">Contact Us</h1>
 
-  <form
-    id="contact-form"
-    class="contact-form animate"
-    action="https://formspree.io/f/xldqqpok"
-    method="POST"
-  >
-    <div class="form-row">
-      <label for="name">Full Name</label>
-      <input id="name" name="name" type="text" placeholder="Your name" required />
+    <p class="animate">
+      Email us at <strong>path.enquiries@gmail.com</strong> or send a message below.
+    </p>
+
+    <!-- Success message -->
+    <div id="form-success" class="form-success">
+      ✅ Thank you! Your enquiry has been submitted successfully.
     </div>
 
-    <div class="form-row">
-      <label for="email">Email</label>
-      <input id="email" name="email" type="email" placeholder="you@example.com" required />
+    <!-- Contact form -->
+    <form
+      id="contact-form"
+      class="contact-form animate"
+      action="https://formspree.io/f/xldqqpok"
+      method="POST"
+    >
+      <div class="form-row">
+        <label for="name">Full Name</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="Your name"
+          required
+        />
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="you@example.com"
+          required
+        />
+      </div>
+
+      <div class="form-row">
+        <label for="subject">Subject</label>
+        <input
+          id="subject"
+          name="subject"
+          type="text"
+          placeholder="What’s this about?"
+          required
+        />
+      </div>
+
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="6"
+          placeholder="Write your message..."
+          required
+        ></textarea>
+      </div>
+
+      <!-- Spam protection -->
+      <input type="text" name="_gotcha" style="display: none" />
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="socials">
+      <a
+        href="https://www.linkedin.com/company/p-a-t-h-network/"
+        target="_blank"
+        aria-label="LinkedIn"
+      >
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a
+        href="https://www.tiktok.com/@p.a.t.h1?_r=1&_t=ZN-91wQTDElTVO"
+        target="_blank"
+        aria-label="TikTok"
+      >
+        <i class="fab fa-tiktok"></i>
+      </a>
+
+      <a
+        href="https://www.instagram.com/p.a.t.h.uk?igsh=MXBtOGQ2YXhrMTZqaw%3D%3D&utm_source=qr"
+        target="_blank"
+        aria-label="Instagram"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a
+        href="https://chat.whatsapp.com/CEUAqeEkyopKfVpbX38gQF"
+        target="_blank"
+        aria-label="WhatsApp"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
     </div>
 
-    <div class="form-row">
-      <label for="subject">Subject</label>
-      <input id="subject" name="subject" type="text" placeholder="What’s this about?" required />
-    </div>
+    <p>© 2025 P.A.T.H - Prepare. Aspire. Thrive. Help.</p>
+  </footer>
 
-    <div class="form-row">
-      <label for="message">Message</label>
-      <textarea
-        id="message"
-        name="message"
-        rows="6"
-        placeholder="Write your message..."
-        required
-      ></textarea>
-    </div>
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
 
-    <!-- Optional: spam protection (honeypot) -->
-    <input type="text" name="_gotcha" style="display:none" />
+  <script>
+    const form = document.getElementById("contact-form");
+    const successMessage = document.getElementById("form-success");
 
-    <!-- Optional: redirect to a thank-you page -->
-    <!-- <input type="hidden" name="_redirect" value="https://syed-ali-06.github.io/path-website/thanks.html" /> -->
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
 
-    <button type="submit" class="btn">Send Message</button>
-  </form>
-</main>
+      const formData = new FormData(form);
 
+      try {
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        });
 
-    <footer>
-        <div class="socials">
-            <a href="https://www.linkedin.com/company/p-a-t-h-network/" target="_blank" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-            </a>
+        if (response.ok) {
+          successMessage.style.display = "block";
+          form.reset();
 
-            <a href="https://www.tiktok.com/@p.a.t.h1?_r=1&_t=ZN-91wQTDElTVO" target="_blank" aria-label="TikTok">
-                <i class="fab fa-tiktok"></i>
-            </a>
-
-            <a href="https://www.instagram.com/p.a.t.h.uk?igsh=MXBtOGQ2YXhrMTZqaw%3D%3D&utm_source=qr" target="_blank" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-
-            <a href="https://chat.whatsapp.com/CEUAqeEkyopKfVpbX38gQF" target="_blank" aria-label="WhatsApp">
-                <i class="fab fa-whatsapp"></i>
-            </a>
-        </div>
-
-        <p>© 2025 P.A.T.H - Prepare. Aspire. Thrive. Help.</p>
-    </footer>
-    <script src="js/main.js"></script>
-
-
+          setTimeout(() => {
+            successMessage.style.display = "none";
+          }, 6000);
+        } else {
+          alert("❌ Something went wrong. Please try again.");
+        }
+      } catch (error) {
+        alert("❌ Network error. Please check your connection.");
+      }
+    });
+  </script>
 </body>
-
 </html>
+
