@@ -50,9 +50,15 @@ body {
 
 /* HERO */
 .hero {
+  min-height: calc(100vh - 72px); /* navbar height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 72px 20px 48px;
+  padding: 40px 20px;
 }
+
 
 .hero-logo {
   width: 260px;
