@@ -1,27 +1,21 @@
-/* =========================
-   GLOBAL RESET
-   ========================= */
+/* RESET */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* =========================
-   BASE
-   ========================= */
+/* BASE */
 body {
-  min-height: 100vh;
   font-family: Arial, sans-serif;
   background: linear-gradient(180deg, #e6f7f6, #ffffff);
   color: #0f172a;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
-/* =========================
-   NAVBAR
-   ========================= */
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -54,58 +48,38 @@ body {
   font-weight: 500;
 }
 
-/* =========================
-   HERO
-   ========================= */
+/* HERO */
 .hero {
-  padding: 80px 20px;
   text-align: center;
+  padding: 72px 20px 48px;
 }
 
 .hero-logo {
-  width: 320px;
+  width: 260px;
   max-width: 80%;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 36px;
   margin-bottom: 24px;
 }
 
-/* =========================
-   PAGE WRAPPER
-   ========================= */
-.page {
-  flex: 1;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 60px 20px;
-}
-.content-section {
-  margin-top: 80px;
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
-
-.page h2 {
-  margin-top: 48px;
-  margin-bottom: 16px;
-  font-size: 26px;
-  font-weight: 800;
-  color: #0f766e;
-}
-
-.page p {
-  max-width: 700px;
-  line-height: 1.7;
-}
-
-/* =========================
-   BUTTONS
-   ========================= */
+/* BUTTONS */
 .btn {
   padding: 14px 24px;
   background: #0d9488;
   color: white;
-  text-decoration: none;
   border-radius: 10px;
+  text-decoration: none;
   font-weight: 600;
-  display: inline-block;
 }
 
 .btn-outline {
@@ -114,151 +88,43 @@ body {
   color: #0d9488;
 }
 
-/* =========================
-   GRIDS
-   ========================= */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
-  margin-top: 40px;
+/* PAGE */
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px 80px;
 }
 
-.resource-grid,
-.company-grid,
-.events-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 24px;
-  margin-top: 24px;
+/* CONTENT SECTIONS */
+.content-section {
+  margin-top: 80px;
 }
 
-/* =========================
-   CARDS
-   ========================= */
-.team-card,
-.event-card,
-.resource-card,
-.company-card {
-  background: rgba(255, 255, 255, 0.95);
-  padding: 24px;
-  border-radius: 16px;
-  border: 1px solid rgba(15, 118, 110, 0.25);
-  text-decoration: none;
-  color: #0f172a;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team-card:hover,
-.event-card:hover,
-.resource-card:hover,
-.company-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(15, 118, 110, 0.25);
-}
-
-/* =========================
-   CARD CONTENT
-   ========================= */
-.resource-card h3 {
-  font-size: 18px;
-  font-weight: 700;
+.content-section h2 {
+  font-size: 26px;
+  font-weight: 800;
   color: #0f766e;
-  margin-bottom: 8px;
-}
-
-.resource-card p {
-  font-size: 14px;
-  line-height: 1.5;
-  color: #334155;
-}
-
-/* =========================
-   TEAM
-   ========================= */
-.team-card {
-  position: relative;
-}
-
-.team-name {
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-.team-bio {
-  line-height: 1.6;
-}
-
-.team-linkedin {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  font-size: 22px;
-  color: #0a66c2;
-}
-
-/* =========================
-   CONTACT FORM
-   ========================= */
-.contact-form {
-  max-width: 650px;
-  margin-top: 28px;
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 16px;
-  padding: 24px;
-  border: 1px solid rgba(15, 118, 110, 0.25);
-}
-
-.form-row {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
   margin-bottom: 16px;
 }
 
-.form-row label {
-  font-weight: 600;
-  color: #0f766e;
+.content-section p {
+  max-width: 700px;
+  line-height: 1.7;
+  margin-bottom: 16px;
 }
 
-.form-row input,
-.form-row textarea {
-  width: 100%;
-  padding: 12px 14px;
-  font-size: 16px;
-  border-radius: 10px;
-  border: 1px solid #cbd5e1;
+.content-section ul {
+  margin-left: 20px;
+  line-height: 1.8;
 }
 
-.form-row input:focus,
-.form-row textarea:focus {
-  border-color: #0d9488;
-  outline: none;
-}
-
-/* =========================
-   FORM SUCCESS
-   ========================= */
-.form-success {
-  display: none;
-  margin: 20px 0;
-  padding: 16px;
-  border-radius: 12px;
-  background: rgba(94, 234, 212, 0.25);
-  border: 1px solid rgba(15, 118, 110, 0.35);
-  color: #0f766e;
-  font-weight: 600;
-}
-
-/* =========================
-   FOOTER
-   ========================= */
+/* FOOTER */
 footer {
-  margin-top: auto;
-  padding: 20px;
   background: #0f766e;
   color: white;
   text-align: center;
+  padding: 24px 16px;
+  margin-top: auto;
 }
 
 .socials {
@@ -273,9 +139,7 @@ footer {
   font-size: 22px;
 }
 
-/* =========================
-   ANIMATIONS
-   ========================= */
+/* SCROLL ANIMATIONS */
 .animate {
   opacity: 0;
   transform: translateY(30px);
@@ -287,11 +151,8 @@ footer {
   transform: translateY(0);
 }
 
-/* =========================
-   MOBILE (ONLY ONE)
-   ========================= */
+/* MOBILE */
 @media (max-width: 768px) {
-
   .navbar {
     flex-direction: column;
     gap: 12px;
@@ -305,34 +166,22 @@ footer {
     font-size: 14px;
   }
 
-  .hero {
-    padding: 40px 16px;
+  .hero h1 {
+    font-size: 28px;
   }
 
   .hero-logo {
     width: 200px;
   }
 
-  .team-grid,
-  .resource-grid,
-  .company-grid,
-  .events-grid {
-    grid-template-columns: 1fr;
+  .content-section {
+    margin-top: 56px;
   }
 
-  .btn,
-  .btn-outline {
+  .btn {
     width: 100%;
+    max-width: 320px;
     text-align: center;
-  }
-
-  .team-linkedin {
-    position: static;
-    margin-top: 12px;
-  }
-
-  .page {
-    padding: 40px 16px;
   }
 }
 
