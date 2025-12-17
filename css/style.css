@@ -1,9 +1,16 @@
+/* =========================
+   GLOBAL RESET
+   ========================= */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/* =========================
+   BASE
+   ========================= */
 body {
-  margin: 0;
   min-height: 100vh;
   font-family: Arial, sans-serif;
   background: linear-gradient(180deg, #e6f7f6, #ffffff);
@@ -12,6 +19,9 @@ body {
   flex-direction: column;
 }
 
+/* =========================
+   NAVBAR
+   ========================= */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -44,8 +54,10 @@ body {
   font-weight: 500;
 }
 
+/* =========================
+   HERO
+   ========================= */
 .hero {
-  flex: 1;
   min-height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
@@ -61,49 +73,14 @@ body {
   margin-bottom: 20px;
 }
 
-
-
+/* =========================
+   PAGE WRAPPER
+   ========================= */
 .page {
   flex: 1;
-  padding: 60px 20px;
   max-width: 1000px;
-  margin: auto;
-}
-
-.btn {
-  padding: 12px 24px;
-  background: #0d9488;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-}
-
-.btn-outline {
-  background: transparent;
-  border: 2px solid #0d9488;
-  color: #0d9488;
-}
-
-.team-grid, .events-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
-  margin-top: 40px;
-}
-
-.team-card, .event-card {
-  background: white;
-  padding: 24px;
-  border-radius: 12px;
-}
-
-footer {
-  margin-top: auto;
-  text-align: center;
-  padding: 20px;
-  background: #0f766e;
-  color: white;
+  margin: 0 auto;
+  padding: 60px 20px;
 }
 
 .page h2 {
@@ -116,171 +93,9 @@ footer {
   line-height: 1.7;
 }
 
-
-/* Scroll animations */
-.animate {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-}
-
-.animate.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.socials {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 12px;
-}
-
-.socials a {
-  color: white;
-  font-size: 22px;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.socials a:hover {
-  transform: translateY(-4px);
-  color: #5eead4; /* lighter teal */
-}
-
-
-@media (max-width: 768px) {
-  .nav-links {
-    gap: 12px;
-  }
-}
-
-
-.team-card {
-  position: relative;
-}
-
-.team-name {
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.team-bio {
-  line-height: 1.6;
-}
-
-.team-linkedin {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  color: #0a66c2;
-  font-size: 22px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.team-linkedin:hover {
-  transform: scale(1.15);
-  opacity: 0.85;
-}
-
-
-.resource-grid,
-.company-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  margin-top: 16px;
-}
-
-.resource-card,
-.company-card {
-  display: block;
-  padding: 16px;
-  border: 1px solid #cbd5e1;
-  border-radius: 12px;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.resource-card:hover,
-.company-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-}
-
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(180deg, #e6f7f6, #ffffff);
-  color: #0f172a;
-  display: flex;
-  flex-direction: column;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 32px;
-  background: #0f766e;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: white;
-  font-weight: bold;
-}
-
-.logo img {
-  height: 36px;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.hero {
-  flex: 1;
-  min-height: calc(100vh - 80px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 80px 20px;
-}
-
-.hero-logo {
-  width: 340px;
-  max-width: 70%;
-  margin-bottom: 20px;
-}
-
-
-
-.page {
-  flex: 1;
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
-}
-
+/* =========================
+   BUTTONS
+   ========================= */
 .btn {
   padding: 12px 24px;
   background: #0d9488;
@@ -288,6 +103,7 @@ body {
   text-decoration: none;
   border-radius: 8px;
   font-weight: 600;
+  display: inline-block;
 }
 
 .btn-outline {
@@ -296,166 +112,85 @@ body {
   color: #0d9488;
 }
 
-.team-grid, .events-grid {
+/* =========================
+   GRIDS
+   ========================= */
+.team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
   margin-top: 40px;
 }
 
-.team-card, .event-card {
-  background: white;
-  padding: 24px;
-  border-radius: 12px;
-}
-
-footer {
-  margin-top: auto;
-  text-align: center;
-  padding: 20px;
-  background: #0f766e;
-  color: white;
-}
-
-.page h2 {
-  margin-bottom: 12px;
-  color: #0f766e;
-}
-
-.page p {
-  max-width: 700px;
-  line-height: 1.7;
-}
-
-
-/* Scroll animations */
-.animate {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease;
-}
-
-.animate.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.socials {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 12px;
-}
-
-.socials a {
-  color: white;
-  font-size: 22px;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.socials a:hover {
-  transform: translateY(-4px);
-  color: #5eead4; /* lighter teal */
-}
-
-
-@media (max-width: 768px) {
-  .nav-links {
-    gap: 12px;
-  }
-}
-
-
-.team-card {
-  position: relative;
-}
-
-.team-name {
-  font-weight: 600;
-  margin-bottom: 8px;
-}
-
-.team-bio {
-  line-height: 1.6;
-}
-
-.team-linkedin {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  color: #0a66c2;
-  font-size: 22px;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-}
-
-.team-linkedin:hover {
-  transform: scale(1.15);
-  opacity: 0.85;
-}
-
-
+.events-grid,
 .resource-grid,
 .company-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-  margin-top: 16px;
+  gap: 24px;
+  margin-top: 40px;
 }
 
-.resource-card,
-.company-card {
-  display: block;
-  padding: 16px;
-  border: 1px solid #cbd5e1;
-  border-radius: 12px;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.resource-card:hover,
-.company-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-}
-
-/* ===== Glow card styling ===== */
-
-.resource-card,
-.company-card,
+/* =========================
+   CARDS (GLOW STYLE)
+   ========================= */
 .team-card,
-.event-card {
-  background: rgba(255, 255, 255, 0.9);
+.event-card,
+.resource-card,
+.company-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 24px;
   border-radius: 16px;
-  padding: 20px;
   border: 1px solid rgba(15, 118, 110, 0.25);
-  box-shadow: 0 0 0 rgba(94, 234, 212, 0);
-  transition:
-    transform 0.4s ease,
-    box-shadow 0.4s ease,
-    border-color 0.4s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
-.resource-card:hover,
-.company-card:hover,
 .team-card:hover,
-.event-card:hover {
-  transform: translateY(-6px) scale(1.01);
+.event-card:hover,
+.resource-card:hover,
+.company-card:hover {
+  transform: translateY(-6px);
   border-color: #5eead4;
   box-shadow:
     0 10px 30px rgba(15, 118, 110, 0.25),
     0 0 20px rgba(94, 234, 212, 0.35);
 }
 
-/* ===== Contact form ===== */
+/* =========================
+   TEAM CARD DETAILS
+   ========================= */
+.team-card {
+  position: relative;
+}
+
+.team-name {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.team-bio {
+  line-height: 1.6;
+}
+
+.team-linkedin {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: #0a66c2;
+  font-size: 22px;
+}
+
+/* =========================
+   CONTACT FORM
+   ========================= */
 .contact-form {
-  margin-top: 28px;
   max-width: 650px;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(15, 118, 110, 0.25);
+  margin-top: 28px;
+  background: rgba(255, 255, 255, 0.95);
   border-radius: 16px;
   padding: 24px;
-  box-shadow: 0 10px 30px rgba(15, 118, 110, 0.10);
+  border: 1px solid rgba(15, 118, 110, 0.25);
+  box-shadow: 0 10px 30px rgba(15, 118, 110, 0.1);
 }
 
 .form-row {
@@ -474,33 +209,21 @@ footer {
 .form-row textarea {
   width: 100%;
   padding: 12px 14px;
+  font-size: 16px;
   border-radius: 10px;
   border: 1px solid #cbd5e1;
-  font-size: 16px;
-  outline: none;
-  background: white;
 }
 
 .form-row input:focus,
 .form-row textarea:focus {
   border-color: #0d9488;
   box-shadow: 0 0 0 4px rgba(94, 234, 212, 0.25);
+  outline: none;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .contact-form {
-    padding: 18px;
-  }
-}
-
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
-  margin-top: 40px;
-}
-
+/* =========================
+   FORM SUCCESS
+   ========================= */
 .form-success {
   display: none;
   margin: 20px 0;
@@ -515,7 +238,92 @@ footer {
   color: #0f766e;
   font-weight: 600;
   box-shadow: 0 0 24px rgba(94, 234, 212, 0.35);
-  animation: fadeIn 0.6s ease forwards;
 }
 
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+  margin-top: auto;
+  padding: 20px;
+  background: #0f766e;
+  color: white;
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 12px;
+}
+
+.socials a {
+  color: white;
+  font-size: 22px;
+}
+
+/* =========================
+   SCROLL ANIMATIONS
+   ========================= */
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   MOBILE FIXES
+   ========================= */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 60px 16px;
+  }
+
+  .hero-logo {
+    width: 220px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .events-grid,
+  .resource-grid,
+  .company-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .btn,
+  .btn-outline {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-form {
+    padding: 18px;
+  }
+
+  .team-linkedin {
+    position: static;
+    margin-top: 12px;
+  }
+}
 
