@@ -399,3 +399,30 @@ footer {
     font-size: 17px;
   }
 }
+
+
+/* =========================
+   MOBILE HERO FIX
+   ========================= */
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: 40px 16px;
+    justify-content: flex-start;
+  }
+
+  .hero-logo {
+    width: 240px;
+    margin-top: 24px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .hero .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
