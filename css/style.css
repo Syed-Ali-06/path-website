@@ -77,6 +77,10 @@ body {
   margin: 0 auto;
   padding: 60px 20px;
 }
+.content-section {
+  margin-top: 80px;
+}
+
 
 .page h2 {
   margin-top: 48px;
