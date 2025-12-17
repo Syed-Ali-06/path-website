@@ -24,10 +24,53 @@
         </ul>
     </nav>
 
-    <main class="page">
-        <h1>Contact Us</h1>
-        <p>Email us at <strong>hello@pathnetwork.uk</strong></p>
-    </main>
+<main class="page">
+  <h1 class="animate">Contact Us</h1>
+  <p class="animate">
+    Email us at <strong>hello@pathnetwork.uk</strong> or send a message below.
+  </p>
+
+  <form
+    class="contact-form animate"
+    action="https://formspree.io/f/xldqqpok"
+    method="POST"
+  >
+    <div class="form-row">
+      <label for="name">Full Name</label>
+      <input id="name" name="name" type="text" placeholder="Your name" required />
+    </div>
+
+    <div class="form-row">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required />
+    </div>
+
+    <div class="form-row">
+      <label for="subject">Subject</label>
+      <input id="subject" name="subject" type="text" placeholder="What’s this about?" required />
+    </div>
+
+    <div class="form-row">
+      <label for="message">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="6"
+        placeholder="Write your message..."
+        required
+      ></textarea>
+    </div>
+
+    <!-- Optional: spam protection (honeypot) -->
+    <input type="text" name="_gotcha" style="display:none" />
+
+    <!-- Optional: redirect to a thank-you page -->
+    <!-- <input type="hidden" name="_redirect" value="https://syed-ali-06.github.io/path-website/thanks.html" /> -->
+
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</main>
+
 
     <footer>
         <div class="socials">
