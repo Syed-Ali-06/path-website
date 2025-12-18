@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>P.A.T.H | University Guidance</title>
 
+  <!-- Global styles -->
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- University-specific styles -->
+  <link rel="stylesheet" href="css/university.css" />
+
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -34,7 +39,7 @@
   <!-- PAGE CONTENT -->
   <main class="page">
 
-    <section class="animate">
+    <section class="uni-section animate">
       <h2>University Applications: Personal Statement Guidance</h2>
       <p>
         UK personal statements have changed. Instead of one long essay, you now answer
@@ -43,49 +48,96 @@
       </p>
     </section>
 
-    <section class="animate">
+    <section class="uni-section animate">
       <h2>Question 1: The Motivation</h2>
       <p><strong>Why do you want to study this course or subject?</strong></p>
       <p>
-        This is the foundation of your application. Identify a clear academic theme
-        that genuinely motivates you and build your application around it.
-      </p>
-      <p>
-        Avoid generic statements. Be specific, thoughtful, and intentional.
+        Identify a clear academic theme that genuinely motivates you and build your
+        application around it. Avoid generic statements — be specific and intentional.
       </p>
     </section>
 
-    <section class="animate">
+    <section class="uni-section animate">
       <h2>Question 2: Academic Preparedness</h2>
       <p><strong>How have your studies and qualifications helped prepare you?</strong></p>
       <p>
-        This section is about what you’ve done beyond the syllabus — your super-curriculars.
-        Focus on how independent study has shaped your thinking.
-      </p>
-      <p>
-        Don’t list subjects. Explain impact and insight.
+        Focus on super-curriculars: books, lectures, competitions, or research done
+        beyond the syllabus. Explain impact, not just activity.
       </p>
     </section>
 
-    <section class="animate">
+    <section class="uni-section animate">
       <h2>Question 3: Practical Preparation</h2>
       <p><strong>What other practical experiences have prepared you?</strong></p>
       <p>
-        Show how you’ve applied your interests in the real world through projects,
-        volunteering, work experience, or leadership roles.
-      </p>
-      <p>
-        Always connect experiences back to skills required for your course.
+        Show how you’ve applied your interests in the real world — projects, volunteering,
+        work experience, or leadership roles — and link them back to your course.
       </p>
     </section>
 
-    <section class="animate">
+    <section class="uni-section animate">
       <h2>Top Tips for Success</h2>
       <ul>
-        <li>Create a clear narrative flow across all three questions</li>
-        <li>Don’t stress the difference between academic and practical</li>
+        <li>Create one clear narrative across all three questions</li>
+        <li>Don’t overthink academic vs practical categories</li>
         <li>If it’s relevant and meaningful, include it</li>
       </ul>
+    </section>
+
+    <!-- COURSE TABS -->
+    <section class="uni-section animate">
+      <h2>Course-Specific Guidance</h2>
+      <p>Select a subject area to see tailored advice.</p>
+
+      <div class="tabs">
+
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="law">Law</button>
+          <button class="tab-btn" data-tab="cs">Computer Science</button>
+          <button class="tab-btn" data-tab="medicine">Medicine</button>
+          <button class="tab-btn" data-tab="engineering">Engineering</button>
+        </div>
+
+        <div class="tab-content">
+
+          <div class="tab-panel active" id="law">
+            <h3>Law</h3>
+            <ul>
+              <li>Discuss legal debates, ethics, or justice</li>
+              <li>Reference case law or legal reading</li>
+              <li>Mooting and debating are highly valuable</li>
+            </ul>
+          </div>
+
+          <div class="tab-panel" id="cs">
+            <h3>Computer Science</h3>
+            <ul>
+              <li>Personal coding projects are essential</li>
+              <li>Explain how and why you built something</li>
+              <li>Mention algorithms or optimisation</li>
+            </ul>
+          </div>
+
+          <div class="tab-panel" id="medicine">
+            <h3>Medicine</h3>
+            <ul>
+              <li>Reflect deeply on work experience</li>
+              <li>Show empathy and ethical awareness</li>
+              <li>Link experiences to NHS values</li>
+            </ul>
+          </div>
+
+          <div class="tab-panel" id="engineering">
+            <h3>Engineering</h3>
+            <ul>
+              <li>Discuss design or problem-solving projects</li>
+              <li>Apply maths and physics concepts</li>
+              <li>Show logical and iterative thinking</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
     </section>
 
   </main>
@@ -111,6 +163,6 @@
   </footer>
 
   <script src="js/main.js"></script>
-
 </body>
 </html>
+
